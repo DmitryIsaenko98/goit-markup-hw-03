@@ -49,7 +49,7 @@ img {
 }
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-header {
@@ -79,6 +79,10 @@ img {
 .buttons,
 .portfolio-section-list {
   list-style: none;
+}
+
+.footer-address-list .item.item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .site-nav {
@@ -187,6 +191,11 @@ img {
   background-color: #188ce8;
 }
 
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
 .features-list {
   list-style: none;
   display: flex;
@@ -222,6 +231,10 @@ img {
   letter-spacing: 0.03em;
 }
 
+.work-section {
+  padding: 94px 0;
+}
+
 .work-section-title {
   text-align: center;
   margin-bottom: 50px;
@@ -253,12 +266,14 @@ img {
   display: flex;
 }
 
-.team-section-list .team-section-box:not(last-child) {
+.team-section-list .team-section-box:not(:last-child) {
   margin-right: 30px;
 }
 
 .bottom-text {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-section-box {
@@ -278,11 +293,8 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.team-image {
-  margin-bottom: 30px;
-}
+
 .team-section-box-text {
-  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -321,7 +333,6 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-bottom: 20px;
 }
 
 .address-link:hover,
@@ -394,8 +405,12 @@ img {
   background-color: var(--primary-background-color);
   width: 370px;
   cursor: pointer;
-  border: 1px solid #eeeeee;
 }
+
+.portfolio-section-link {
+  text-decoration: none;
+}
+
 .portfolio-section-box:hover,
 .portfolio-section-box:focus {
   color: var(--accent-color);
@@ -405,10 +420,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.portfolio-image {
-  margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .portfolio-section-box-title {
@@ -429,6 +441,9 @@ img {
 }
 
 .portfolio-section-content {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
